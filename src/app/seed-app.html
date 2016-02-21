@@ -1,9 +1,11 @@
-<h3>Angular2 Seed</h3>
-<div>
-	<a [routerLink]="['/Home']">Home</a>
-	<a [routerLink]="['/About']">About</a>
-	<a [routerLink]="['/RepoBrowser/RepoList', {org: 'angular'}]">Github Repos</a>
+<h1>Angular 2 Change Detection Demos</h1>
+<p>Pick one of the following:</p>
+<div class="site-nav">
+  <a [routerLink]="['/DefaultChangeDetection']">Default Change Detection</a>
+  <a [routerLink]="['/OnPushChangeDetection']">OnPush Change Detection</a>
+  <a [routerLink]="['/OnPushChangeDetectionObservables']">OnPush Change Detection (Observables)</a>
+  <a [routerLink]="['/ManualChangeDetection']">Manual Change Detection</a>
 </div>
 <div>
-	<router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
