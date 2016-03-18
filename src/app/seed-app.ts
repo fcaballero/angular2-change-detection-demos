@@ -7,10 +7,12 @@ import {OnPushChangeDetection} from './components/on-push-cd/on-push-cd';
 import {OnPushChangeDetectionObservables} from './components/on-push-cd-observables/on-push-cd-observables';
 import {ManualChangeDetection} from './components/manual-cd/manual-cd';
 
+import {Zippy} from './components/zippy/zippy';
+
 @Component({
   selector: 'seed-app',
   templateUrl: 'app/seed-app.html',
-  directives: [ROUTER_DIRECTIVES],
+  directives: [ROUTER_DIRECTIVES, Zippy],
   styleUrls: ['app/seed-app.css'],
   encapsulation: ViewEncapsulation.None
 })
